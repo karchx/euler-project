@@ -3,11 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	var limit int = 4_000_000
+	limit := 4_000_000
 	var aux, fib uint64 = 1, 0
 	var result uint64
 
-  for i := 1; i <= limit; i++ {
+	for i := 1; i <= limit; i++ {
 		aux += fib
 		fib = aux - fib
 		if fib <= 4_000_000 {
