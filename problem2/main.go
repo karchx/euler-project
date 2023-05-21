@@ -1,9 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
+
+const limit = 4_000_000
 
 func main() {
-	limit := 4_000_000
 	var aux, fib uint64 = 1, 0
 	var result uint64
 
@@ -18,3 +21,5 @@ func main() {
 	}
 	fmt.Println(result)
 }
+
+
